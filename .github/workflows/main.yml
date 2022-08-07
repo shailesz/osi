@@ -10,13 +10,10 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2.3.2
-      - name: Setup Bun Runtime
-        uses: antongolub/action-setup-bun@v1
+      - uses: xhyrom/setup-bun@v0.1.7
         with:
-          bun-version: 0.1.7
-          bun-repo: 'Jarred-Sumner/bun-releases-for-updater'
-          bun-config: '{"install: {"production": false}}'
-      - run: bun a react-scripts -d
+          bun-version: latest
+      - run: bun a react-scripts
       - run: bun react-scripts build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
