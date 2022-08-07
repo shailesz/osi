@@ -10,9 +10,11 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2.3.2
-      - uses: xhyrom/setup-bun@v0.1.7
+      - name: Use Bun
+        uses: xhyrom/setup-bun@v0.1.7
         with:
           bun-version: latest
+      - run: bun a react-scripts -d
       - run: bun react-scripts build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
