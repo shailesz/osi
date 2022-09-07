@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2.4.2
-      - uses: xhyrom/setup-bun@v0.1.10
+      - uses: xhyrom/setup-bun@v0.1.7
         with:
           bun-version: latest
       - run: bun install
