@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2.4.2
       - name: Setup Bun Runtime
-      - uses: antongolub/action-setup-bun@v1
+        uses: antongolub/action-setup-bun@v1
         with:
           bun-config: '{"install: {"production": false}}'
       - run: bun install
