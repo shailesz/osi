@@ -13,7 +13,7 @@ jobs:
       - uses: xhyrom/setup-bun@v0.1.7
         with:
           bun-version: latest
-      - run: bun a react-scripts
+      - run: bun add react-scripts -d
       - run: bun react-scripts build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
