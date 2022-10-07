@@ -19,5 +19,5 @@
     "noFallthroughCasesInSwitch": true,
     "typeRoots": ["src/@types", "./node_modules/@types"]
   },
-  "include": ["src"]
+  "include": ["src", "../src/helpers", "../src/components/post", "../src/components/header"]
 }
