@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import { ContentfulPost } from "../types/post";
 import Post from "../components/post/Post";
 import SEO from "../components/SEO/SEO";
+import Layout from "../components/layout/Layout";
 
 
 type IndexPageProps = {
@@ -17,13 +18,15 @@ type IndexPageProps = {
 
 const IndexPage: React.FC<IndexPageProps> = ({data: {allContentfulBlogPost: {edges: posts}}}) => {
   return (
-    <Container>
-      <SEO />
-      <Header />
-      {posts.map(({node}) => (
-        <Post key={node.id} {...node} />
-      ))}
-    </Container>
+    <Layout>
+        <Container>
+        <SEO />
+        <Header />
+        {posts.map(({node}) => (
+          <Post key={node.id} {...node} />
+        ))}
+      </Container>
+    </Layout>
   );
 };
 
