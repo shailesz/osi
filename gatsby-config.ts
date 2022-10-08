@@ -8,7 +8,6 @@ const config: GatsbyConfig = {
   siteMetadata: {
     siteUrl: `https://www.osi.shailesz.live`,
   },
-  graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

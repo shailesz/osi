@@ -14,7 +14,7 @@ const Post: React.FC<ContentfulPost> = ({ id, title, body, feelsLike, publishDat
   }
   
   return (
-    <Container key={id} mb={32}>
+    <Container mb={32}>
       <Title
         order={3}
         color="pink"

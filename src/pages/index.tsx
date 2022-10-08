@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import { ContentfulPost } from "../types/post";
 import Post from "../components/post/Post";
 import SEO from "../components/SEO/SEO";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/Layout/Layout";
 
 
 type IndexPageProps = {
