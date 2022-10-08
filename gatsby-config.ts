@@ -10,6 +10,7 @@ const config: GatsbyConfig = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-mantine`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -24,6 +25,7 @@ const config: GatsbyConfig = {
       }
     },
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`
   ],
 }
 
